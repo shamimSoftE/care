@@ -1,0 +1,644 @@
+/* ============================== resume Part Start =================================== */
+#resume{
+    padding-bottom: 70px;
+    .resume_content{
+        .resume_nav{
+            width: 25%;
+            margin-top: 40px;
+            button{
+                background: linear-gradient(145deg, #1e2024, #23272b);
+                box-shadow: 10px 10px 19px #1c1e22;
+                border-radius: 5px;
+                padding: 20px 40px;
+                font-size: 16px;
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 25px;
+                @include transition();
+                &:hover{
+                    background: linear-gradient(to right bottom, #212428, #16181c);
+                    color: $hover;
+                }
+                &.active{
+                    background: linear-gradient(to right bottom, #212428, #16181c);
+                    color: $hover;
+                }
+            }
+        }
+        .resume_item{
+            width: 70%;
+            .resume_header{
+                text-align: center;
+                margin-bottom: 20px;
+                h2{
+                    font-size: 36px;
+                    font-weight: 300;
+                    color: #dadada;
+                    text-transform: uppercase;
+                }
+            }
+            .resume_education{
+                .resume_education_contents{
+                    ul{
+                        margin-left: 150px;
+                        margin-top: 40px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: #16181c;
+                            width: 5px;
+                            height: 100%;
+                            top: 0;
+                            left: -85px;
+                            z-index: -1;
+                        }
+                        li{
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 13.5%;
+                                height: 5px;
+                                top: 35px;
+                                left: -85px;
+                            }
+                            .resume_education_desp{
+                                background: linear-gradient(145deg, #1e2024, #23272b);
+                                box-shadow: 10px 10px 19px #1c1e22;
+                                border-radius: 5px;
+                                padding: 30px 40px;
+                                position: relative;
+                                margin-bottom: 20px;
+                                h2{
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    padding-bottom: 10px;
+                                }
+                                h6{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: $hover;
+                                    text-transform: uppercase;
+                                    padding-bottom: 10px;
+                                }
+                                .edu_single-info{
+                                    padding: 20px 0 10px 0;
+                                    span{
+                                        color: #dadada;
+                                        font-weight: 400;
+                                        margin-right: 10px;
+                                        font-size: 15px;
+                                    }
+                                    p{
+                                        color: #9f9f9f;
+                                        font-weight: 400;
+                                        margin-right: 10px;
+                                        font-size: 15px;
+                                        display: inline;
+                                    }
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 5px solid #16181c;
+                                    border-radius: 100%;
+                                    left: -92px;
+                                    top: 28px;
+                                    background: #212428;
+                                    z-index: 1;
+                                }
+                                &:hover{
+                                    background: linear-gradient(to right bottom, #212428, #16181c);
+                                    &::after{
+                                        background: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .resume_expereince{
+                .resume_expereince_contents{
+                    ul{
+                        margin-left: 150px;
+                        margin-top: 40px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: #16181c;
+                            width: 5px;
+                            height: 100%;
+                            top: 0;
+                            left: -85px;
+                            z-index: -1;
+                        }
+                        li{
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 13.5%;
+                                height: 5px;
+                                top: 35px;
+                                left: -85px;
+                            }
+                            .resume_experience_desp{
+                                background: linear-gradient(145deg, #1e2024, #23272b);
+                                box-shadow: 10px 10px 19px #1c1e22;
+                                border-radius: 5px;
+                                padding: 30px 40px;
+                                position: relative;
+                                margin-bottom: 20px;
+                                h2{
+                                    font-size: 22px;
+                                    font-weight: 700;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    padding-bottom: 10px;
+                                }
+                                h6{
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    color: $hover;
+                                    text-transform: uppercase;
+                                    padding-bottom: 10px;
+                                    span{
+                                        color: #9f9f9f;
+                                        font-weight: 300;
+                                        font-size: 14px;
+                                        display: inline;
+                                    }
+                                }
+                                p{
+                                    color: #dadada;
+                                    font-weight: 300;
+                                    font-size: 18px;
+                                }
+                                .exu_single-info{
+                                    padding: 20px 0 10px 0;
+                                    span{
+                                        color: #dadada;
+                                        font-weight: 400;
+                                        margin-right: 10px;
+                                        font-size: 15px;
+                                    }
+                                    p{
+                                        color: #9f9f9f;
+                                        font-weight: 400;
+                                        margin-right: 10px;
+                                        font-size: 15px;
+                                        display: inline;
+                                        
+                                    }
+                                    a{
+                                        color: $hover;
+                                        font-weight: 400;
+                                        margin-right: 10px;
+                                        font-size: 15px;
+                                        display: inline;
+                                    }
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 5px solid #16181c;
+                                    border-radius: 100%;
+                                    left: -92px;
+                                    top: 28px;
+                                    background: #212428;
+                                    z-index: 1;
+                                }
+                                &:hover{
+                                    background: linear-gradient(to right bottom, #212428, #16181c);
+                                    &::after{
+                                        background: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .resume_skills{
+                .my_skilss{
+                    ul{
+                        margin-left: 150px;
+                        margin-top: 40px;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: #16181c;
+                            width: 5px;
+                            height: 100%;
+                            top: 0;
+                            left: -85px;
+                            z-index: -1;
+                        }
+                        li{
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 13.5%;
+                                height: 5px;
+                                top: 35px;
+                                left: -85px;
+                            }
+                            .skills{
+                                background: linear-gradient(145deg, #1e2024, #23272b);
+                                box-shadow: 10px 10px 19px #1c1e22;
+                                border-radius: 5px;
+                                padding: 30px 40px;
+                                position: relative;
+                                margin-bottom: 20px;
+                                .bar-title{
+                                    font-size: 14px;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    text-transform: uppercase;
+                                }
+                                .bar-text{
+                                    font-size: 14px !important;
+                                    font-weight: 700 !important;
+                                    color: $hover !important;
+                                }
+                                .bar-mesure {
+                                    font-size: 1.8em;
+                                    border-radius: 1em;
+                                    background: #212428;
+                                    box-shadow: inset 8px 8px 16px #00000075, inset -8px -8px 16px #383e4575;
+                                    max-width: 100%;
+                                }
+                                .bar-mesure > div {
+                                    padding: 0.1em 0.5em;
+                                    border-radius: 1em;
+                                    text-align: right;
+                                    background-color: $hover;
+                                    background-size: 15rem 100%;
+                                    color: $hover;
+                                    box-sizing: border-box;
+                                }
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 5px solid #16181c;
+                                    border-radius: 100%;
+                                    left: -92px;
+                                    top: 28px;
+                                    background: #212428;
+                                    z-index: 1;
+                                }
+                                &:hover{
+                                    background: linear-gradient(to right bottom, #212428, #16181c);
+                                    &::after{
+                                        background: $hover;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile_row{
+        display: none;
+        .mobile_resume_content{
+            .resume_nav{
+                ul{
+                    justify-content: center;
+                    li{
+                        margin: 0 12px;
+                        button{
+                            background: linear-gradient(145deg, #1e2024, #23272b);
+                            box-shadow: 10px 10px 19px #1c1e22;
+                            border-radius: 5px;
+                            padding: 20px 40px;
+                            font-size: 16px;
+                            color: #fff;
+                            font-weight: 700;
+                            margin-bottom: 25px;
+                            @include transition();
+                            &:hover{
+                                background: linear-gradient(to right bottom, #212428, #16181c);
+                                color: $hover;
+                            }
+                            &.active{
+                                background: linear-gradient(to right bottom, #212428, #16181c);
+                                color: $hover;
+                            }
+                        }
+                    }
+                }
+            }
+            .resume_item{
+                .resume_header{
+                    text-align: center;
+                    margin-bottom: 20px;
+                    h2{
+                        font-size: 36px;
+                        font-weight: 300;
+                        color: #dadada;
+                        text-transform: uppercase;
+                    }
+                }
+                .resume_education{
+                    .resume_education_contents{
+                        ul{
+                            margin-left: 150px;
+                            margin-top: 40px;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 5px;
+                                height: 100%;
+                                top: 0;
+                                left: -85px;
+                                z-index: -1;
+                            }
+                            li{
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    background: #16181c;
+                                    width: 13.5%;
+                                    height: 5px;
+                                    top: 35px;
+                                    left: -85px;
+                                }
+                                .resume_education_desp{
+                                    background: linear-gradient(145deg, #1e2024, #23272b);
+                                    box-shadow: 10px 10px 19px #1c1e22;
+                                    border-radius: 5px;
+                                    padding: 30px 40px;
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    z-index: 9999;
+                                    h2{
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        padding-bottom: 10px;
+                                    }
+                                    h6{
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: $hover;
+                                        text-transform: uppercase;
+                                        padding-bottom: 10px;
+                                    }
+                                    .edu_single-info{
+                                        padding: 20px 0 10px 0;
+                                        span{
+                                            color: #dadada;
+                                            font-weight: 400;
+                                            margin-right: 10px;
+                                            font-size: 15px;
+                                        }
+                                        p{
+                                            color: #9f9f9f;
+                                            font-weight: 400;
+                                            margin-right: 10px;
+                                            font-size: 15px;
+                                            display: inline;
+                                        }
+                                    }
+                                    &::after{
+                                        position: absolute;
+                                        content: "";
+                                        width: 20px;
+                                        height: 20px;
+                                        border: 5px solid #16181c;
+                                        border-radius: 100%;
+                                        left: -92px;
+                                        top: 28px;
+                                        background: #212428;
+                                        z-index: 1;
+                                    }
+                                    &:hover{
+                                        background: linear-gradient(to right bottom, #212428, #16181c);
+                                        &::after{
+                                            background: $hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .resume_expereince{
+                    .resume_expereince_contents{
+                        ul{
+                            margin-left: 150px;
+                            margin-top: 40px;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 5px;
+                                height: 100%;
+                                top: 0;
+                                left: -85px;
+                                z-index: -1;
+                            }
+                            li{
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    background: #16181c;
+                                    width: 13.5%;
+                                    height: 5px;
+                                    top: 35px;
+                                    left: -85px;
+                                }
+                                .resume_experience_desp{
+                                    background: linear-gradient(145deg, #1e2024, #23272b);
+                                    box-shadow: 10px 10px 19px #1c1e22;
+                                    border-radius: 5px;
+                                    padding: 30px 40px;
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    z-index: 999;
+                                    h2{
+                                        font-size: 22px;
+                                        font-weight: 700;
+                                        color: #fff;
+                                        text-transform: uppercase;
+                                        padding-bottom: 10px;
+                                    }
+                                    h6{
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        color: $hover;
+                                        text-transform: uppercase;
+                                        padding-bottom: 10px;
+                                        span{
+                                            color: #9f9f9f;
+                                            font-weight: 300;
+                                            font-size: 14px;
+                                            display: inline;
+                                        }
+                                    }
+                                    p{
+                                        color: #dadada;
+                                        font-weight: 300;
+                                        font-size: 18px;
+                                    }
+                                    .exu_single-info{
+                                        padding: 20px 0 10px 0;
+                                        span{
+                                            color: #dadada;
+                                            font-weight: 400;
+                                            margin-right: 10px;
+                                            font-size: 15px;
+                                        }
+                                        p{
+                                            color: #9f9f9f;
+                                            font-weight: 400;
+                                            margin-right: 10px;
+                                            font-size: 15px;
+                                            display: inline;
+                                            
+                                        }
+                                        a{
+                                            color: $hover;
+                                            font-weight: 400;
+                                            margin-right: 10px;
+                                            font-size: 15px;
+                                            display: inline;
+                                        }
+                                    }
+                                    &::after{
+                                        position: absolute;
+                                        content: "";
+                                        width: 20px;
+                                        height: 20px;
+                                        border: 5px solid #16181c;
+                                        border-radius: 100%;
+                                        left: -92px;
+                                        top: 28px;
+                                        background: #212428;
+                                        z-index: 1;
+                                    }
+                                    &:hover{
+                                        background: linear-gradient(to right bottom, #212428, #16181c);
+                                        &::after{
+                                            background: $hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .resume_skills{
+                    .my_skilss{
+                        ul{
+                            margin-left: 150px;
+                            margin-top: 40px;
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                content: "";
+                                background: #16181c;
+                                width: 5px;
+                                height: 100%;
+                                top: 0;
+                                left: -85px;
+                                z-index: -1;
+                            }
+                            li{
+                                position: relative;
+                                &::after{
+                                    position: absolute;
+                                    content: "";
+                                    background: #16181c;
+                                    width: 13.5%;
+                                    height: 5px;
+                                    top: 35px;
+                                    left: -85px;
+                                }
+                                .skills{
+                                    background: linear-gradient(145deg, #1e2024, #23272b);
+                                    box-shadow: 10px 10px 19px #1c1e22;
+                                    border-radius: 5px;
+                                    padding: 30px 40px;
+                                    position: relative;
+                                    margin-bottom: 20px;
+                                    z-index: 999;
+                                    .bar-title{
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                    }
+                                    .bar-text{
+                                        font-size: 14px !important;
+                                        font-weight: 700 !important;
+                                        color: $hover !important;
+                                    }
+                                    .bar-mesure {
+                                        font-size: 1.8em;
+                                        border-radius: 1em;
+                                        background: #212428;
+                                        box-shadow: inset 8px 8px 16px #00000075, inset -8px -8px 16px #383e4575;
+                                        max-width: 100%;
+                                    }
+                                    .bar-mesure > div {
+                                        padding: 0.1em 0.5em;
+                                        border-radius: 1em;
+                                        text-align: right;
+                                        background-color: $hover;
+                                        background-size: 15rem 100%;
+                                        color: $hover;
+                                        box-sizing: border-box;
+                                    }
+                                    &::after{
+                                        position: absolute;
+                                        content: "";
+                                        width: 20px;
+                                        height: 20px;
+                                        border: 5px solid #16181c;
+                                        border-radius: 100%;
+                                        left: -92px;
+                                        top: 28px;
+                                        background: #212428;
+                                        z-index: 1;
+                                    }
+                                    &:hover{
+                                        background: linear-gradient(to right bottom, #212428, #16181c);
+                                        &::after{
+                                            background: $hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== resume Part End  =================================== */

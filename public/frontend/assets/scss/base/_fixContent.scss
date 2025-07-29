@@ -1,0 +1,34 @@
+@import '../mixins/mixins';
+
+.resume_body_left_fix{
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 360px;
+    transition: ease .3s;
+    animation: topTobottom .5s;
+}
+
+/* ============ BAck to top button css Start ============= */
+.backtotop{
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1e2024, #23272b);
+    box-shadow: 10px 10px 19px #1c1e22;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+}
+.fix_backtotop{
+    z-index: 9999;
+}
+/* ============ BAck to top button css End ============= */
+
+

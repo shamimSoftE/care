@@ -1,0 +1,51 @@
+/* ============================== Client Part Start =================================== */
+#client{
+    padding-bottom: 70px;
+    .client_slider{
+        .client_item{
+            margin: 0 10px;
+            &.slick-active{
+                .client_content{
+                    box-shadow: 10px 10px 19px #1c1e22;
+                }
+            }
+            .client_content{
+                background: linear-gradient(to right bottom, #212428, #16181c);
+                border-radius: 25px;
+                text-align: center;
+                padding: 20px 0;
+                height: 185px;
+                cursor: pointer;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: end;
+                align-items: end;
+                .client_logo{
+                    width: 100%;
+                    padding-bottom: 20px;
+                    img{
+                        margin: 0 auto;
+                    }
+                }
+                .client_name{
+                    width: 100%;
+                    border-top: 1px solid #16181c;
+                    padding-top: 10px;
+                    h6{
+                        @include text(20px,700,#fff);
+                        @include transition();
+                    }
+                }
+                &:hover{
+                    background: linear-gradient(145deg, #1e2024, #23272b);
+                    .client_name{
+                        h6{
+                            color: $hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* ============================== Client Part End =================================== */

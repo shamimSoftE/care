@@ -1,0 +1,75 @@
+:root{
+    --main-color: #F28020;
+    --hover: #009e66;
+    --opacity: #4978BC;
+    --text: #dadada;
+    --title: #F04E4C;
+}
+
+@media(min-width:1101px) and (max-width:1200.98px) {
+
+}
+
+@media(min-width:992px) and (max-width:1100.98px) {
+
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+
+}
+
+@media(min-width:576px) and (max-width:767.98px){
+
+}
+
+@media(max-width:575.98px){
+    /* ========================== */
+    /* Contact Page
+    /* ========================== */
+    #contact_us .card{
+        margin: 0 12.5px 20px 12.5px;
+    }
+    /* ========================== */
+    /* Contact Page End
+    /* ========================== */
+
+
+    .pop_up .pop_up_content {
+        top: 30%;
+    }
+    .pop_up .pop_up_content {
+        width: 350px;
+    }
+    .navbar #navbarSupportedContent .search_bar{
+        display: none !important;
+    }
+    #service .serv_content{
+        margin-bottom: 20px;
+    }
+    #top-notch-repair-service .tnrs-content .tnrs-top-video{
+        height: 250px;
+    }
+    #happy_customer .customer-review-slider .customer-review-slider-item .customer-review-slider-content .msg{
+        padding: 0 0 0 20px;
+    }
+    #happy_customer .customer-review-slider {
+        padding: 25px 50px;
+    }
+    #happy_customer .customer-review-slider .slick-dots{
+        padding-top: 0;
+    }
+    #footer .contact_us_card::after {
+        display: none;
+    }
+    #footer .contact_us_card .contact_whatsapp{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    #footer .footer-nav,
+    #footer .social{
+        display: none;
+    }
+    #footer .copyright-txt{
+        text-align: center;
+    }
+}

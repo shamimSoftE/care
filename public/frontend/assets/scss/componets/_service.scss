@@ -1,0 +1,35 @@
+/* ============================== Service Part Start =================================== */
+#service{
+    margin-top: -200px;
+    .service_content{
+        background: linear-gradient(145deg, #1e2024, #23272b);
+        padding: 30px 40px;
+        border-radius: 25px;
+        box-shadow: 10px 10px 19px #1c1e22;
+        transform: scale(0.9);
+        @include transition();
+        &:hover{
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            transform: scale(1);
+        }
+        .icon{
+            padding-bottom: 20px;
+            i{
+                font-size: 55px;
+                color: $hover;
+            }
+        }
+        .title{
+            h4{
+                @include text(20px,700,#fff);
+                padding-bottom: 10px;
+            }
+        }
+        .desp{
+            p{
+                @include text(15px,400,$text);
+            }
+        }
+    }
+}
+/* ============================== Service Part End  =================================== */

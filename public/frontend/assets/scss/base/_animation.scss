@@ -1,0 +1,39 @@
+@keyframes marquee {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes topTobottom{
+    from{
+        transform: translateY(-75px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+@-webkit-keyframes barAnimation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(75px);
+        transform: translateX(75px)
+    }
+}
+  
+@keyframes barAnimation {
+    from {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    to {
+        -webkit-transform: translateX(75px);
+        transform: translateX(75px)
+    }
+}

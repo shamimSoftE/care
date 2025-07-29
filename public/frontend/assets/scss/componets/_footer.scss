@@ -1,0 +1,168 @@
+/* ==================  Footer Start  ================== */
+#contact{
+    position: relative;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    padding: 70px 0 20px 0;
+    box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.13);
+    .ovrly_2{
+        position: absolute;
+        background: rgba(31, 37, 44, 0.5);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+    .contact_info{
+        h2{
+            @include text(30px,600,#fff);
+            padding-bottom: 10px;
+        }
+        p{
+            @include text(16px,300,#dadada);
+            padding-bottom: 30px;
+        }
+        .my_details{
+            position: relative;
+            &::after{
+                @include af_bf();
+                top: 0;
+                left: 58px;
+                width: 2px;
+                background: rgba(255,255,255,.15);
+                height: 100%;
+            }
+            i{
+                color: $hover;
+                font-size: 35px;
+            }
+            span{
+                color: #dadada;
+                font-weight: 400;
+                font-size: 15px;
+                display: block;
+                a{
+                    color: #dadada;
+                    font-weight: 400;
+                    font-size: 15px;
+                    display: block;
+                }
+            }
+            p{
+                color: #9f9f9f;
+                font-weight: 400;
+                font-size: 15px;
+                display: block;
+                padding-bottom: 5px;
+                a{
+                    color: $hover;
+                    font-weight: 600;
+                }
+            }
+        }
+        h5{
+            @include text(18px,700,#fff);
+            padding: 20px 0 10px 0;
+        }
+        .social{
+            ul{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                li{
+                    margin: 10px 15px;
+                    position: relative;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    a{
+                        font-size: 18px;
+                        color: rgba(255, 255, 255, 0.6);
+                        @include transition();
+                    }
+                    span{
+                        display: none;
+                        position: absolute;
+                        top: 35px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 14px;
+                        font-weight: 300;
+                        padding: 5px 10px;
+                        background: #fff;
+                        color: #121212;
+                        border-radius: 5px;
+                        &::after{
+                            @include af_bf();
+                            top: -20px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            border-bottom: 10px solid #fff;
+                            border-top: 10px solid transparent;
+                            border-left: 10px solid transparent;
+                            border-right: 10px solid transparent;
+                        }
+                    }
+                    &:hover{
+                        a{
+                            color: rgba(255, 255, 255, 1);
+                        }
+                        span{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .messege_me{
+        h2{
+            @include text(30px,600,#fff);
+            padding-bottom: 10px;
+        }
+        input{
+            background-color: #191b1e;
+            border-radius: 6px;
+            height: 55px;
+            border: 2px solid #191b1e;
+            padding: 0 15px;
+            font-size: 14px;
+            color: #fff;
+            box-shadow: 10px 10px 19px #1c1e22;
+            letter-spacing: 1px;
+            
+        }
+        textarea{
+            background-color: #191b1e;
+            border-radius: 6px;
+            border: 2px solid #191b1e;
+            padding: 15px;
+            font-size: 14px;
+            color: #fff;
+            box-shadow: 10px 10px 19px #1c1e22;
+            letter-spacing: 1px;
+            resize: none;
+        }
+        button{
+            border-radius: 25px;
+            background: $hover;
+            font-size: 14px;
+            font-weight: 500;
+            border: 0 none;
+            color: #fff;
+            padding: 12px 20px;
+        }
+    }
+    .copyRight{
+        padding-top: 40px;
+        p{
+            padding: 0;
+            color: #9f9f9f;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+}
+/* ==================  Footer Part End  ================== */

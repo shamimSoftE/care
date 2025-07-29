@@ -1,0 +1,114 @@
+/* ============================== Profile Part Start =================================== */
+#profile{
+    transform: translateY(-175px);
+    padding-left: 100px;
+    .profile_image{
+        border: 2px solid rgba(255, 255, 255, 0.6);
+    }
+    .social{
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            li{
+                margin: 10px 15px;
+                position: relative;
+                a{
+                    font-size: 18px;
+                    color: rgba(255, 255, 255, 0.6);
+                    @include transition();
+                }
+                span{
+                    display: none;
+                    position: absolute;
+                    top: 35px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    font-size: 14px;
+                    font-weight: 300;
+                    padding: 5px 10px;
+                    background: #fff;
+                    color: #121212;
+                    border-radius: 5px;
+                    &::after{
+                        @include af_bf();
+                        top: -20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        border-bottom: 10px solid #fff;
+                        border-top: 10px solid transparent;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                    }
+                }
+                &:hover{
+                    a{
+                        color: rgba(255, 255, 255, 1);
+                    }
+                    span{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+#about_me{
+    transform: translateY(-150px);
+    .my_info{
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            top: -10px;
+            left: -12px;
+            background: rgba(238, 238, 238, 0.3);
+            width: 80%;
+            height: 2px;
+        }
+        .single-info{
+            padding: 20px 0 10px 0;
+            span{
+                color: #dadada;
+                font-weight: 400;
+                margin-right: 10px;
+                font-size: 14px;
+            }
+            p{
+                color: #9f9f9f;
+                font-weight: 400;
+                margin-right: 10px;
+                font-size: 14px;
+                display: inline;
+                a{
+                    color: $hover;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .about_me_translate{
+        text-align: center;
+        transform: translateY(-185px);
+        p{
+            font-size: 16px;
+            font-weight: 300;
+            color: #dadada;
+            padding: 25px 0;
+        }
+        .cv{
+            padding: 10px 22px;
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(213,213,213,1) 100%);
+            color: #121212;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 25px;
+            box-shadow: 0px 20px 50px transparent;
+            @include transition();
+            &:hover{
+                box-shadow: 0px 20px 50px rgba(198, 217, 225, 0.13);
+            }
+        }
+    }
+}
+/* ============================== Profile Part End  =================================== */

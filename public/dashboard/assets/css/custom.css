@@ -1,0 +1,19 @@
+#sidebar-menu ul li a {
+    padding: 5px 20px !important;
+}
+.left-side-menu {
+    padding: inherit !important;
+}
+.table tr td
+{
+    color: #000;
+}
+.logo span.logo-lg img
+{
+    width: 50%;
+    height: 40%;
+}
+.ck-editor
+{
+    width: 100% !important;
+}

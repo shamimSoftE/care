@@ -1,0 +1,156 @@
+/* ============================== Testimonial Part Start =================================== */
+#testimonial{
+    padding-bottom: 70px;
+    .testi_slider{
+        margin: 20px 0px !important;
+        position: relative;
+        .testi_slider_item{
+            &.slick-active{
+                .test_client_info{
+                    .testi_client_details{
+                        box-shadow: 10px 10px 19px #1c1e22;
+                    }
+                }
+                .testi_desp{
+                    .testi_desp_body{
+                        box-shadow: 10px 10px 19px #1c1e22;
+                    }
+                }
+            }
+            .test_client_info{
+                text-align: center;
+                .testi_client_img{
+                    position: relative;
+                    z-index: 1;
+                    img{
+                        border-radius: 50%;
+                        margin: 0 auto;
+                    }
+                    &::after{
+                        @include af_bf();
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 170px;
+                        height: 170px;
+                        border-radius: 50%;
+                        background: linear-gradient(to right bottom, #212428, #16181c);
+                        box-shadow: 10px 10px 19px #1c1e22;
+                        z-index: -1;
+                        @include transition();
+                    }
+                }
+                .testi_client_details{
+                    margin-top: 50px;
+                    background: linear-gradient(145deg, #1e2024, #23272b);
+                    border-radius: 25px;
+                    padding: 20px;
+                    position: relative;
+                    span{
+                        @include text(12px,700,$hover);
+                        display: block;
+                    }
+                    h4{
+                        @include text(28px,600,#fff);
+                        padding: 10px 0;
+                    }
+                    h6{
+                        @include text(18px,400,#9f9f9f);
+                    }
+                    &::after{
+                        @include af_bf();
+                        background: #16181c;
+                        width: 5px;
+                        height: 40px;
+                        top: -40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: -1;
+                        @include transition();
+                    }
+                }
+            }
+            .testi_desp{
+                padding-left: 60px;
+                .testi_desp_top{
+                    img{
+                        width: 15% !important;
+                    }
+                }
+                .testi_desp_body{
+                    margin-top: 20px;
+                    background: linear-gradient(145deg, #1e2024, #23272b);
+                    border-radius: 25px;
+                    padding: 20px 30px ;
+                    position: relative;
+                    &::after{
+                        @include af_bf();
+                        background: #16181c;
+                        width: 85px;
+                        height: 5px;
+                        bottom: 80px;
+                        left: -45px;
+                        transform: translateX(-50%);
+                        z-index: -1;
+                        @include transition();
+                    }
+                    h4{
+                        @include text(28px,600,$hover);
+                        padding: 10px 0;
+                    }
+                    h6{
+                        @include text(18px,400,#9f9f9f);
+                    }
+                    .rating{
+                        display: flex;
+                        padding: 10px 0;
+                        justify-content: center;
+                        i{
+                            color: #d4c600;
+                            margin: 0 5px;
+                        }
+                    }
+                    p{
+                        @include text(16px,400,#fff); 
+                    }
+                }
+            }
+            &:hover{
+                .testi_client_details{
+                    background: linear-gradient(to right bottom, #212428, #16181c);
+                    &::after{
+                        background: $hover;
+                    }
+                }
+                .testi_desp_body{
+                    background: linear-gradient(to right bottom, #212428, #16181c);
+                    &::after{
+                        background: $hover;
+                    }
+                }
+            }
+        }
+        .prev_post,
+        .next_post{
+            position: absolute;
+            top: 45px;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: 10px 10px 19px #1c1e22;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            z-index: 99;
+            cursor: pointer;
+        }
+        .prev_post{
+            right: 115px;
+        }
+        .next_post{
+            right: 60px;
+        }
+    }
+}
+/* ============================== Testimonial Part End  =================================== */

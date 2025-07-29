@@ -1,0 +1,170 @@
+/* ============================== portfolio Part Start =================================== */
+#portfolio{
+    padding-bottom: 70px;
+    .portfolio_modal_button{
+        cursor: pointer;
+        padding-bottom: 25px;
+        .port_item{
+            height: 375px;
+            background: linear-gradient(145deg, #1e2024, #23272b);
+            box-shadow: 10px 10px 19px #1c1e22;
+            border-radius: 25px;
+            padding: 25px 20px;
+            @include transition();
+            position: relative;
+            .port_img{
+                overflow: hidden;
+                img{
+                    transform: scale(1);
+                    @include transition();
+                }
+            }
+            .port_content{
+                h6{
+                    @include text(14px,600,$hover);
+                    text-transform: uppercase;
+                    padding: 10px 0;
+                }
+                h4{
+                    @include text(20px,600,#fff);
+                    @include transition();
+                    i{
+                        font-size: 15px;
+                        padding-left: 10px;
+                        transform: scale(0);
+                        @include transition();
+                    }
+                }
+            }
+            &::after{
+                @include af_bf();
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 88%;
+                height: 2px;
+                background: $hover;
+                opacity: 0;
+                @include transition();
+            }
+            &:hover{
+                background: linear-gradient(to right bottom, #212428, #16181c);
+                .port_img{
+                    img{
+                        transform: scale(1.05);
+                    }
+                }
+                .port_content{
+                    h4{
+                        color: $hover;
+                        i{
+                            transform: scale(1);
+                        }
+                    }
+                }
+                &::after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* ============================== Modal CSS  =================================== */
+.port_modal{
+    .port_dialog{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0 auto;
+        .port-modal-content{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: linear-gradient(to right bottom, #212428, #16181c);
+            width: 820px;
+            .modal-header{
+                border-bottom-color: $hover;
+                h5{
+                    @include text(20px,600,#fff);
+                    text-transform: uppercase;
+                }
+                button{
+                    background: linear-gradient(145deg, #1e2024, #23272b);
+                    box-shadow: 10px 10px 19px #1c1e22;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 20px;
+                    color: #fff;
+                }
+            }
+            .modal-body{
+                .port_img{
+                    position: relative;
+                    .ovrly{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: rgba(22, 24, 28, 0.7);
+                        a{
+                            i{
+                                margin-right: 15px;
+                            }
+                            padding: 12px 20px;
+                            @include text(14px,500,#fff);
+                            text-transform: uppercase;
+                            background: linear-gradient(145deg, rgba(30, 32, 36, 0.7), rgba(35, 39, 43, 0.7));
+                            box-shadow: 10px 10px 19px #1c1e22;
+                            border-radius: 25px;
+                        }
+                    }
+                }
+                .port_cont{
+                    h6{
+                        @include text(14px,600,$hover);
+                        text-transform: uppercase;
+                        padding: 10px 0;
+                    }
+                    h4{
+                        @include text(20px,600,#fff);
+                    }
+                    p{
+                        @include text(14px,300,#dadada); 
+                        padding: 10px 0;
+                    }
+                    span{
+                        @include text(14px,700,#9f9f9f);
+                        display: block;
+                        padding-bottom: 10px;
+                    }
+                    ul{
+                        display: flex;
+                        li{
+                            margin-right: 20px;
+                            a{
+                                i{
+                                    margin-right: 15px;
+                                }
+                                padding: 12px 20px;
+                                @include text(14px,500,$hover);
+                                text-transform: uppercase;
+                                background: linear-gradient(145deg, #1e2024, #23272b);
+                                box-shadow: 10px 10px 19px #1c1e22;
+                                border-radius: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ============================== portfolio Part End  =================================== */
